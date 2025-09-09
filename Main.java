@@ -24,7 +24,9 @@ public class Main {
         System.out.println("1. Tambah Kegiatan");
         System.out.println("2. Tampilkan Daftar Kegiatan");
         System.out.println("3. Tandai Selesai");
-        System.out.println("4. Keluar");
+        System.out.println("4. Update Tenggat");
+        System.out.println("5. Hapus Kegiatan");
+        System.out.println("6. Keluar");
         System.out.print("Pilih menu: ");
         int menu = input.nextInt();
         input.nextLine(); 
@@ -35,7 +37,7 @@ public class Main {
                     String nama = input.nextLine();
                     namaKegiatan.add(nama);
 
-                    System.out.print("tenggat kegiatan (contoh: Senin): ");
+                    System.out.print("Tenggat hari kegiatan (contoh: Senin): ");
                     String hari = input.nextLine();
                     tenggat.add(hari);
 
@@ -49,9 +51,9 @@ public class Main {
                     } else {
                         System.out.println("\n=== DAFTAR KEGIATAN ===");
                         for (int i = 0; i < namaKegiatan.size(); i++) {
-                            System.out.println((i + 1) + ". " + namaKegiatan.get(i)
-                                    + " | Tenggat: " + tenggat.get(i)
-                                    + " | Status: " + status.get(i));
+                            System.out.println((i + 1) + ". " + namaKegiatan.get(i) + "\n Tenggat: " + tenggat.get(i) + 
+                                                                                      "\n Status : " + status.get(i)+
+                                                                                      "\n-----------------------------");
                         }
                     }
                     break;
@@ -77,12 +79,38 @@ public class Main {
                     break;
 
                 case 4: 
-                    System.out.println("Terima kasih telah menggunakan program ini!.");
+                    System.out.print("Masukkan nomor kegiatan yang ingin diupdate tenggatnya: ");
+                    int updateIdx = input.nextInt();
+                    input.nextLine();
+                    if (updateIdx > 0 && updateIdx <= tenggat.size()) {
+                        System.out.print("Masukkan tenggat baru: ");
+                        tenggat.set(updateIdx - 1, input.nextLine());
+                        System.out.println("Tenggat kegiatan nomor " + updateIdx + " berhasil diupdate!");
+                    } else {
+                        System.out.println("Nomor tidak valid.");
+                    }
+                    break;
+
+                case 5:
+                    System.out.print("Masukkan nomor kegiatan yang ingin dihapus: ");
+                    int hapusIdx = input.nextInt();
+                    input.nextLine();
+                    if (hapusIdx > 0 && hapusIdx <= namaKegiatan.size()) {
+                        namaKegiatan.remove(hapusIdx - 1);
+                        tenggat.remove(hapusIdx - 1);
+                        status.remove(hapusIdx - 1);
+                        System.out.println("Kegiatan nomor " + hapusIdx + " berhasil dihapus!");
+                    } else {
+                        System.out.println("Nomor tidak valid.");
+                    }
+                    break;
+                case 6: 
+                    System.out.println("Terima kasih!");
                     input.close();
                     return;
 
                 default:
-                    System.out.println("input tidak valid.");
+                    System.out.println("Input tidak valid.");
             }
         }
     }
