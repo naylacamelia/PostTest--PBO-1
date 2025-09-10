@@ -15,7 +15,6 @@ public class Main {
         ArrayList<LocalDate> tenggat = new ArrayList<>(); 
         ArrayList<String> status = new ArrayList<>();
 
-        // Contoh data awal
         namaKegiatan.add("Mengerjakan Tugas PBO");
         tenggat.add(LocalDate.of(2025, 9, 15));
         status.add("Belum selesai");
