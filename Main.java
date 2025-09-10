@@ -24,14 +24,15 @@ public class Main {
         status.add("Belum selesai");
 
         while (true) {
-            System.out.println("\n=== ACTIVITY LOG ===");
+            System.out.println("\n======== ACTIVITY LOG ========");
             System.out.println("1. Tambah Kegiatan");
             System.out.println("2. Tampilkan Daftar Kegiatan");
             System.out.println("3. Tandai Selesai");
             System.out.println("4. Update Tenggat Kegiatan");
             System.out.println("5. Hapus Kegiatan");
             System.out.println("6. Keluar");
-            System.out.print("Pilih menu: ");
+            System.out.println("===============================");
+            System.out.print("Pilih menu (1 - 6): ");
             int menu = input.nextInt();
             input.nextLine(); 
 
@@ -54,9 +55,11 @@ public class Main {
                     if (namaKegiatan.isEmpty()) {
                         System.out.println("Kegiatan kamu kosong.");
                     } else {
-                        System.out.println("\n=== DAFTAR KEGIATAN ===");
+                        System.out.println("\n==============================");
+                        System.out.println("    DAFTAR KEGIATAN KAMU    ");
+                        System.out.println("==============================");
                         for (int i = 0; i < namaKegiatan.size(); i++) {
-                            System.out.println("-------------------------------");
+
                             System.out.println("No     : " + (i + 1));
                             System.out.println("Nama   : " + namaKegiatan.get(i));
                             System.out.println("Tenggat: " + tenggat.get(i)); 
@@ -76,13 +79,13 @@ public class Main {
                                     + " | Status: " + status.get(i));
                         }
                         System.out.println("-------------------------------------------------------");
-                        System.out.print("\nMasukkan nomor kegiatan yang telah diselesaikan: ");
+                        System.out.print("Masukkan nomor kegiatan yang telah diselesaikan: ");
                         int idx = input.nextInt();
                         input.nextLine();
                         if (idx > 0 && idx <= status.size()) {
                             String kegiatanSelesai = namaKegiatan.get(idx - 1);
                             status.set(idx - 1, "Selesai");
-                            System.out.println("\nKegiatan " + kegiatanSelesai + " berhasil diselesaikan! ('ᴗ')");
+                            System.out.println("\nKegiatan " + kegiatanSelesai + " berhasil diselesaikan! ('_^)");
                             System.out.println("-------------------------------------------------------");
                         } else {
                             System.out.println("Nomor tidak valid.");
@@ -97,7 +100,7 @@ public class Main {
                                 + " | Tenggat: " + tenggat.get(i));
                     }
                     System.out.println("-------------------------------------------------------");
-                    System.out.print("\nMasukkan nomor kegiatan yang ingin diperbarui: ");
+                    System.out.print("Masukkan nomor kegiatan yang ingin diperbarui: ");
                     int updateIdx = input.nextInt();
                     input.nextLine();
                     if (updateIdx > 0 && updateIdx <= tenggat.size()) {
@@ -106,7 +109,7 @@ public class Main {
                         System.out.print("Masukkan tenggat baru (format: yyyy-mm-dd): ");
                         LocalDate tglBaru = LocalDate.parse(input.nextLine());
                         tenggat.set(updateIdx - 1, tglBaru);
-                        System.out.println("\nTenggat " + updateKegiatan + " berhasil diperbarui! ('ᴗ')");
+                        System.out.println("\nTenggat " + updateKegiatan + " berhasil diperbarui! ('_^)");
                         System.out.println("-------------------------------------------------------");
                     } else {
                         System.out.println("Nomor tidak valid.");
@@ -120,7 +123,7 @@ public class Main {
                                 + " | Status: " + status.get(i));
                     }
                     System.out.println("-------------------------------------------------------");
-                    System.out.print("\nMasukkan nomor kegiatan yang ingin dihapus: ");
+                    System.out.print("Masukkan nomor kegiatan yang ingin dihapus: ");
                     int hapusIdx = input.nextInt();
                     input.nextLine();
                     if (hapusIdx > 0 && hapusIdx <= namaKegiatan.size()) {
@@ -128,7 +131,7 @@ public class Main {
                         namaKegiatan.remove(hapusIdx - 1);
                         tenggat.remove(hapusIdx - 1);
                         status.remove(hapusIdx - 1);
-                        System.out.println("Kegiatan " + hapusKegiatan + " berhasil dihapus! ('ᴗ')");
+                        System.out.println("Kegiatan " + hapusKegiatan + " berhasil dihapus! ('_^)");
                         System.out.println("-------------------------------------------------------");
                     } else {
                         System.out.println("Nomor tidak valid.");
