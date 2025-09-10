@@ -4,7 +4,7 @@ Nayla Camelia Indraswari | A | 2409116009
 # Sistem Manajemen Aktivitas Harian (Activity Log)
 ## Deskripsi Tema
 Program ini merupakan sistem pencatat aktivitas harian sederhana yang dirancang untuk membantu pengguna dalam menyusun dan memantau tugas atau kegiatannya sehari-hari. Melalui program ini, setiap kegiatan penting dapat dicatat dengan detail, diberi tenggat waktu, diperbarui statusnya, hingga dihapus jika sudah tidak diperlukan. Dengan begitu, pengguna dapat lebih mudah mengelola aktivitas dan memastikan setiap tugas terselesaikan tepat waktu.
-## Penjelasan Output
+## Penjelasan Alur Program
 ### Menu Utama
 
 <img width="471" height="250" alt="image" src="https://github.com/user-attachments/assets/81a20764-64dc-48e1-a1ca-4b34da29a567" />
