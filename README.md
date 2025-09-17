@@ -7,55 +7,29 @@ Program ini merupakan sistem pencatat aktivitas harian sederhana yang dirancang 
 ## Penjelasan Alur Program
 ### Menu Utama
 
-<img width="367" height="198" alt="image" src="https://github.com/user-attachments/assets/0cd611d9-8d6a-4479-950a-6b85f4172f35" />
+<img width="471" height="250" alt="image" src="https://github.com/user-attachments/assets/81a20764-64dc-48e1-a1ca-4b34da29a567"  />
 
-program ini memiliki 7 fitur, diantaranya yakni pilihan untuk menambah kegiatan, menampilkan kegiatan, memperbarui deadline kegiatan, menghapus kegiatan, mencari kegiatan dan pilihan untuk keluar dari program.
+program ini memiliki 6 fitur, diantaranya yakni pilihan untuk menambah kegiatan, menampilkan kegiatan, memperbarui deadline kegiatan, menghapus kegiatan dan pilihan untuk keluar dari program.
 
 ### 1. Fitur Tambah Kegiatan
-<img width="368" height="269" alt="image" src="https://github.com/user-attachments/assets/556b11ae-e366-43b4-a219-2c791cfe16e7" />
+<img width="471" height="269" alt="image" src="https://github.com/user-attachments/assets/87f187d9-e42c-4784-87e1-d52bd62f9879" />
 
 Ketika pengguna memilih menu dengan memasukkan angka "1", mereka akan masuk ke fitur Tambah Kegiatan. Di fitur ini, pengguna akan diminta untuk memasukkan nama kegiatan serta tenggat waktu yang terkait dengan kegiatan tersebut. Status kegiatan akan otomatis tersimpan "belum selesai".
 
-<img width="373" height="270" alt="image" src="https://github.com/user-attachments/assets/cbac42a7-a3cc-4068-9cbb-2e9040d97436" />
-
-Ketika pengguna memasukan format tanggal yang salah atau tidak sesuai, maka program akan muncul keterangan bahwa input tidak valid dan otomatis kembali ke menu utama.
-
 ### 2. Fitur Menampilkan Daftar Kegiatan
-<img width="459" height="399" alt="image" src="https://github.com/user-attachments/assets/57c89995-4c70-4df4-a55e-f99d4e79d11e" />
+<img width="373" height="356" alt="image" src="https://github.com/user-attachments/assets/ca39b2e8-1ed7-4e7b-bb16-b8a04f2d559e" />
 
 Ketika pengguna memilih menu dengan memasukkan angka "2", ia akan masuk ke fitur yang amenampilkan seluruh daftar kegiatan beserta detail informasinya, seperti tenggat waktu dan status kegiatan (selesai atau belum).
 
 ### 3. Fitur Tandai Selesai
-<img width="619" height="453" alt="image" src="https://github.com/user-attachments/assets/0c073ead-56c9-40f7-8dc9-44793b28c62b" />
+<img width="513" height="226" alt="image" src="https://github.com/user-attachments/assets/e9166533-5500-43b4-9c51-f3891b0f8113" />
 
-Jika pengguna memasukkan angka "3", mereka akan diarahkan ke fitur Tandai Selesai. Pada fitur ini, pengguna diminta memasukkan nomor kegiatan yang telah diselesaikan atau yang ingin ditandai selesai. Setelah itu status kegiatan akan diperbarui menjadi selesai.
-
-Berikut adalah tampilan daftar kegiatan setelah di perbarui:
-
-<img width="420" height="392" alt="image" src="https://github.com/user-attachments/assets/e0576f10-ceb3-4952-ba3a-3ca9eb18788d" />
-
-- Ketika pengguna menginput nomor kegiatan yang tidak tersedia, maka akan muncul output berupa informasi "Input tidak valid" dan program kembali ke menu utama.
-
-<img width="352" height="398" alt="image" src="https://github.com/user-attachments/assets/a21adf40-62c5-4c3c-983d-795ed01133a4" />
-
-- Ketika pengguna tidak menginput angka, maka akan muncul output berupa informasi "Input harus angka" dan program kembali ke menu utama.
-
-<img width="330" height="390" alt="image" src="https://github.com/user-attachments/assets/0fd851a7-90fa-44b9-9c16-d43347a7411e" />
-
+Jika pengguna memasukkan angka "3", mereka akan diarahkan ke fitur Tandai Selesai. Di fitur ini, pengguna diminta memasukkan nomor kegiatan yang telah diselesaikan, dan setelah itu status kegiatan akan diperbarui menjadi selesai.
 
 ### 4. Fitur Update Tenggat Kegiatan
-<img width="605" height="340" alt="image" src="https://github.com/user-attachments/assets/794a4050-f7e8-452a-be49-98e11be2a50f" />
+<img width="471" height="262" alt="image" src="https://github.com/user-attachments/assets/c937f3bd-476d-4367-a69e-e60740dd85d0" />
 
 Ketika pengguna memilih menu dengan memasukkan angka "4", mereka akan masuk ke fitur Update Tenggat. Di fitur ini, pengguna diminta untuk memasukkan nomor kegiatan yang ingin diperbarui, kemudian ia akab diminta memasukkan tenggat waktu baru dari kegiatan tersebut.
-
-- Ketika pengguna menginputkan nomor kegiatan yang tidak tersedia, akan muncul output berupa "nomor tidak valid" dan program akan kembali ke menu utama.
-
-<img width="417" height="298" alt="image" src="https://github.com/user-attachments/assets/e4d7c036-62cd-4c03-b37f-ee7f0f47a491" />
-
-- Ketika pengguna melakukan input selain angka, maka akan muncul output berupa informasi "input harus berupa angka" dan program kembali ke menu utama.
-<img width="369" height="299" alt="image" src="https://github.com/user-attachments/assets/c3706f29-4df7-4d90-9e71-94358d85b1d3" />
-
-
 
 ### 5. Fitur Hapus Kegiatan
 <img width="471" height="220" alt="image" src="https://github.com/user-attachments/assets/447f12b0-9b80-4fa2-9ecc-ad0a20d10eae" />
